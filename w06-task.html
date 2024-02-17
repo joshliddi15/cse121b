@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 m-6">
+    <div class="container mx-auto mt-16 p-8 bg-white rounded-lg shadow-md">
+        <section id="HeaderSection" class="mb-6 bg-gray-100 shadow-md p-6 rounded-lg">
+            <h1 class="text-4xl text-indigo-600 m-4">Tool Tracker</h1>
+            <input type="text" id="searchInput" placeholder="Search Tools" class="w-full p-3 mb-4 rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <select id="sortSelect" class="w-full p-3 mb-4 rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="name">Sort by Name</option>
+                <option value="location">Sort by Location</option>
+            </select>
+            <select id="filterSelect" class="w-full p-3 mb-6 rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="">All Locations</option>
+                <option value="Tool Room">Tool Room</option>
+                <option value="Service Truck 1">Service Truck 1</option>
+                <option value="Service Truck 2">Service Truck 2</option>
+                <option value="Service Truck 3">Service Truck 3</option>
+                <option value="Service Truck 4">Service Truck 4</option>
+                <option value="Service Truck 5">Service Truck 5</option>
+                <option value="Project Site A">Project Site A</option>
+                <option value="Project Site B">Project Site B</option>
+                <option value="Project Site C">Project Site C</option>
+                <option value="Project Site D">Project Site D</option>
+            </select>
+        </section>
+        <ul id="toolList" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        </ul>
+    </div>
+
+    <script src="scripts/w06-task.js"></script>
+</body>
+</html>
